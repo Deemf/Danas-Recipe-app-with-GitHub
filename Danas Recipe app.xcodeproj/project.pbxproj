@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79CFF59925E893B60084F262 /* Danas_Recipe_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFF59825E893B60084F262 /* Danas_Recipe_App.swift */; };
+		79CFF59B25E893B60084F262 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFF59A25E893B60084F262 /* ContentView.swift */; };
+		79CFF59D25E893B70084F262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CFF59C25E893B70084F262 /* Assets.xcassets */; };
+		79CFF5A025E893B70084F262 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CFF59F25E893B70084F262 /* Preview Assets.xcassets */; };
+		79CFF5AE25E894C90084F262 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 79CFF5AD25E894C90084F262 /* recipes.json */; };
+		79CFF5B125E894E40084F262 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFF5B025E894E40084F262 /* Recipe.swift */; };
+		79CFF5B425E895990084F262 /* Recipemodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFF5B325E895990084F262 /* Recipemodel.swift */; };
+		79CFF5B725E896470084F262 /* decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFF5B625E896470084F262 /* decoder.swift */; };
+		79CFF5BE25EDC2920084F262 /* detailview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFF5BD25EDC2920084F262 /* detailview.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79CFF59525E893B60084F262 /* Danas Recipe app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Danas Recipe app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CFF59825E893B60084F262 /* Danas_Recipe_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Danas_Recipe_App.swift; sourceTree = "<group>"; };
+		79CFF59A25E893B60084F262 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		79CFF59C25E893B70084F262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79CFF59F25E893B70084F262 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79CFF5A125E893B70084F262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79CFF5AD25E894C90084F262 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = recipes.json; path = "../../../../../../Downloads/RecipeListApp Resources/recipes.json"; sourceTree = "<group>"; };
+		79CFF5B025E894E40084F262 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		79CFF5B325E895990084F262 /* Recipemodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipemodel.swift; sourceTree = "<group>"; };
+		79CFF5B625E896470084F262 /* decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decoder.swift; sourceTree = "<group>"; };
+		79CFF5BD25EDC2920084F262 /* detailview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailview.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79CFF59225E893B60084F262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79CFF58C25E893B60084F262 = {
+			isa = PBXGroup;
+			children = (
+				79CFF59725E893B60084F262 /* Danas Recipe app */,
+				79CFF59625E893B60084F262 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79CFF59625E893B60084F262 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79CFF59525E893B60084F262 /* Danas Recipe app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79CFF59725E893B60084F262 /* Danas Recipe app */ = {
+			isa = PBXGroup;
+			children = (
+				79CFF59825E893B60084F262 /* Danas_Recipe_App.swift */,
+				79CFF5A925E893E70084F262 /* Views */,
+				79CFF5AA25E893F50084F262 /* ModelView */,
+				79CFF5AB25E8941F0084F262 /* model */,
+				79CFF5AC25E894470084F262 /* Services */,
+				79CFF59C25E893B70084F262 /* Assets.xcassets */,
+				79CFF59E25E893B70084F262 /* Preview Content */,
+				79CFF5A125E893B70084F262 /* Info.plist */,
+			);
+			path = "Danas Recipe app";
+			sourceTree = "<group>";
+		};
+		79CFF59E25E893B70084F262 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				79CFF59F25E893B70084F262 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		79CFF5A925E893E70084F262 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79CFF59A25E893B60084F262 /* ContentView.swift */,
+				79CFF5BD25EDC2920084F262 /* detailview.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79CFF5AA25E893F50084F262 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				79CFF5B325E895990084F262 /* Recipemodel.swift */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		79CFF5AB25E8941F0084F262 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				79CFF5B025E894E40084F262 /* Recipe.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		79CFF5AC25E894470084F262 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				79CFF5AD25E894C90084F262 /* recipes.json */,
+				79CFF5B625E896470084F262 /* decoder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79CFF59425E893B60084F262 /* Danas Recipe app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79CFF5A425E893B70084F262 /* Build configuration list for PBXNativeTarget "Danas Recipe app" */;
+			buildPhases = (
+				79CFF59125E893B60084F262 /* Sources */,
+				79CFF59225E893B60084F262 /* Frameworks */,
+				79CFF59325E893B60084F262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Danas Recipe app";
+			productName = "Danas Recipe app";
+			productReference = 79CFF59525E893B60084F262 /* Danas Recipe app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79CFF58D25E893B60084F262 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					79CFF59425E893B60084F262 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 79CFF59025E893B60084F262 /* Build configuration list for PBXProject "Danas Recipe app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79CFF58C25E893B60084F262;
+			productRefGroup = 79CFF59625E893B60084F262 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79CFF59425E893B60084F262 /* Danas Recipe app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79CFF59325E893B60084F262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CFF5A025E893B70084F262 /* Preview Assets.xcassets in Resources */,
+				79CFF5AE25E894C90084F262 /* recipes.json in Resources */,
+				79CFF59D25E893B70084F262 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79CFF59125E893B60084F262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CFF5B725E896470084F262 /* decoder.swift in Sources */,
+				79CFF5B125E894E40084F262 /* Recipe.swift in Sources */,
+				79CFF59B25E893B60084F262 /* ContentView.swift in Sources */,
+				79CFF5BE25EDC2920084F262 /* detailview.swift in Sources */,
+				79CFF59925E893B60084F262 /* Danas_Recipe_App.swift in Sources */,
+				79CFF5B425E895990084F262 /* Recipemodel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		79CFF5A225E893B70084F262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79CFF5A325E893B70084F262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79CFF5A525E893B70084F262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Danas Recipe app/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Danas Recipe app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dana.farhat..Danas-Recipe-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79CFF5A625E893B70084F262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Danas Recipe app/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Danas Recipe app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dana.farhat..Danas-Recipe-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79CFF59025E893B60084F262 /* Build configuration list for PBXProject "Danas Recipe app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CFF5A225E893B70084F262 /* Debug */,
+				79CFF5A325E893B70084F262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79CFF5A425E893B70084F262 /* Build configuration list for PBXNativeTarget "Danas Recipe app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CFF5A525E893B70084F262 /* Debug */,
+				79CFF5A625E893B70084F262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79CFF58D25E893B60084F262 /* Project object */;
+}
