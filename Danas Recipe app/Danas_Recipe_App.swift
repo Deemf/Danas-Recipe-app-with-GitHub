@@ -11,7 +11,7 @@ import SwiftUI
 struct Danas_Recipe_App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Tab_view()
         }
     }
 }
