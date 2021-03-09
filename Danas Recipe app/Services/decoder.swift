@@ -21,8 +21,12 @@ class decoder {
                 
                 do { let recipedata = try decoder.decode([Recipe].self, from: data)
                     
-                    for i in recipedata {
-                        i.id = UUID()
+                    for r in recipedata {
+                        r.id = UUID()
+                    
+                        for i in r.ingredients {
+                            i.id = UUID()
+                        }
                     }
                     return recipedata
                 }
