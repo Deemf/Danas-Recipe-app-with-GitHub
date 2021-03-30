@@ -16,25 +16,36 @@ struct ContentView: View {
         
         
         NavigationView {
-            
-            List(model.recipes) { r in
-                NavigationLink(
-                    destination: detailview(recipe:r),
-                    label: {
-                        HStack(spacing: 7.0) {
-                            Image(r.image).resizable().frame(width: 89.0, height: 89.0).cornerRadius(6.0)
-                            Text(r.name)
-                                .font(.body)
-                                .multilineTextAlignment(.center)
+            VStack(alignment:.leading) {
+                Text("All Recipes")
+                    .font(.largeTitle)
+                    .bold()
+                ScrollView {
+                    LazyVStack(alignment:.leading) {
+                        ForEach(model.recipes) { r in
+                            NavigationLink(
+                                destination: detailview(recipe:r),
+                                label: {
+                                    HStack(spacing: 7.0) {
+                                        Image(r.image).resizable().frame(width: 89.0, height: 89.0).cornerRadius(6.0)
+                                        Text(r.name)
+                                            .font(.body)
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(.black)
+                                    }
+                                })
                         }
-                    })
-            }.navigationBarTitle(Text("All Recipes"))
+                    }
+
+                }.navigationBarHidden(true)
+            }.padding()
+
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(Recipemodel())
     }
 }
