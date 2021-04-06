@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FeaturedView: View {
    @EnvironmentObject var model:Recipemodel
+    @State var showDetailRecipe = false
     
     var body: some View {
         VStack(alignment:.leading ,spacing: 5){
@@ -20,15 +21,22 @@ struct FeaturedView: View {
                 TabView {
                     ForEach(0..<model.recipes.count) { f in
                         if model.recipes[f].featured == true {
-                            ZStack {
-                                Rectangle().foregroundColor(.white)
-                                VStack {
-                                    Image(model.recipes[f].image)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fill)
-                                    Text(model.recipes[f].name)
-                                }
-                            }.frame(width: geo.size.width - 50, height: geo.size.height - 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            Button(action: { self.showDetailRecipe = true },
+                                   label: {
+                                    ZStack {
+                                        Rectangle().foregroundColor(.white)
+                                        VStack {
+                                            Image(model.recipes[f].image)
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fill)
+                                            Text(model.recipes[f].name)
+                                        }
+                                    }
+                            })
+                            .sheet(isPresented: $showDetailRecipe) {
+                                detailview(recipe:model.recipes[f])
+                            }
+                            .frame(width: geo.size.width - 50, height: geo.size.height - 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             .cornerRadius(10.0)
                             .shadow(color: .yellow, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                         }
@@ -40,7 +48,8 @@ struct FeaturedView: View {
             Text("1 hour")
             Text("Highlights:").bold()
             Text("creamy,rich,yummy")
-        }.padding()
+        }
+    .padding()
     }
 }
 
