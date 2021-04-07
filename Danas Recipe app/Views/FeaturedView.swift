@@ -10,15 +10,25 @@ import SwiftUI
 struct FeaturedView: View {
    @EnvironmentObject var model:Recipemodel
     @State var showDetailRecipe = false
+    @State var tabSelectionIndex = 0
+    
+    func setFeaturedIndex() {
+   var index =  model.recipes.firstIndex { (recipes) -> Bool in
+            return recipes.featured
+        }
+        tabSelectionIndex = index ?? 0
+    }
     
     var body: some View {
+        
+        
         VStack(alignment:.leading ,spacing: 5){
             Text("Featured View")
                 .font(.largeTitle)
                 .bold()
             GeometryReader { geo in
                 
-                TabView {
+                TabView(selection : $tabSelectionIndex) {
                     ForEach(0..<model.recipes.count) { f in
                         if model.recipes[f].featured == true {
                             Button(action: { self.showDetailRecipe = true },
@@ -33,6 +43,7 @@ struct FeaturedView: View {
                                         }
                                     }
                             })
+                                .tag(f)
                             .sheet(isPresented: $showDetailRecipe) {
                                 detailview(recipe:model.recipes[f])
                             }
@@ -41,16 +52,23 @@ struct FeaturedView: View {
                             .shadow(color: .yellow, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                         }
                 }
+                    
                 }.tabViewStyle(PageTabViewStyle(indexDisplayMode:.always))
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+
             }
-            Text("Preparation Time:").bold()
-            Text("1 hour")
-            Text("Highlights:").bold()
-            Text("creamy,rich,yummy")
+            Text("Preparation Time: ").bold()
+            Text(model.recipes[tabSelectionIndex].prepTime)
+            Text("Highlights").bold()
+            Text(model.recipes[tabSelectionIndex].highlights)
         }
+        .onAppear(perform: {
+            setFeaturedIndex()
+        })
     .padding()
     }
+
+
 }
 
 struct FeaturedView_Previews: PreviewProvider {
